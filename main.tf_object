@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "ap-south-1"
 }
 
 variable "server_config" {
@@ -10,7 +10,7 @@ variable "server_config" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-0741dc526e1106ae5"
+  ami           = "ami-0e38835daf6b8a2b9"
   instance_type = var.server_config.instance_type
 }
 
